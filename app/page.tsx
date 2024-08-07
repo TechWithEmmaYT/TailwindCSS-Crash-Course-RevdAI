@@ -1,7 +1,10 @@
 import Image from "next/image";
-import TitleSection from "@/components/landing-page/TitleSection";
+import TitleSection from "@/components/TitleSection";
 import Banner from "@/public/images/appBanner1.png";
-import CompanySection from "@/components/landing-page/CompanySection";
+import CompanySection from "@/components/CompanySection";
+import FeatureSection from "@/components/FeatureSection";
+import Testimonials from "@/components/Testimonials";
+import PricingSection from "@/components/PricingSection";
 
 export default function Home() {
   return (
@@ -16,11 +19,12 @@ export default function Home() {
             <TitleSection
               pill="✨ Your AI Workspace, Perfected"
               title="Explore the possibilities of AI Tools with Revd.ai"
+              isCurveline={true}
             />
             <div className="flex flex-col items-center w-full max-w-[350px] gap-3 py-5 mx-auto">
               <div
                 className="w-full h-[46px] relative rounded-full bg-gradient-to-r p-[1px] 
-            from-[#2A2A2A] to-[#737373]"
+            from-[#2A2A2A] to-[#737373] mt-5"
               >
                 <input
                   type="text"
@@ -63,6 +67,9 @@ export default function Home() {
       </section>
 
       <CompanySection />
+      <FeatureSection />
+      <Testimonials />
+      <PricingSection />
     </main>
   );
 }

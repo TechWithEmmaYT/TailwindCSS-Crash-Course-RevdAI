@@ -5,12 +5,14 @@ interface TitleSectionProps {
   title: string;
   subheading?: string;
   pill: string;
+  isCurveline?: boolean;
 }
 
 const TitleSection: React.FC<TitleSectionProps> = ({
   subheading,
   title,
   pill,
+  isCurveline,
 }) => {
   return (
     <div>
@@ -27,7 +29,7 @@ const TitleSection: React.FC<TitleSectionProps> = ({
               text-[11.87px]
               bg-gradient-to-r
               from-brand-primary-blue
-              to-brand-primary-purple"
+              to-brand-primary-purple mb-5"
         >
           <div
             className="rounded-full mx-auto px-4 py-2
@@ -42,22 +44,30 @@ const TitleSection: React.FC<TitleSectionProps> = ({
             <div className="relative">
               <h2
                 className="
-                text-left
-                 text-3xl
-                 sm:text-5xl
+                text-center
+                 text-[35px] 
+                 sm:text-[55px]
                  sm:max-w-[750]
                  md:text-center
-                 font-semibold
+                 leading-tight
+                 font-bold
                  "
               >
                 {title}
               </h2>
+              {isCurveline && (
+                <span className="absolute bottom-0 right-11">
+                  <Curveline />
+                </span>
+              )}
             </div>
             <p
               className="
-                dark:text-washed-purple-700
+                text-washed-purple-700
                 sm:max-w-[450px]
                 md:text-center
+                text-[13px]
+                sm:text-[16px]
                 "
             >
               {subheading}
@@ -67,13 +77,17 @@ const TitleSection: React.FC<TitleSectionProps> = ({
           <div className="relative">
             <h1
               className="text-center text-[45px] sm:text-[65px]
-                 sm:max-w-[850px] md:text-center font-semibold"
+                 sm:max-w-[850px] md:text-center 
+                      leading-tight
+                 font-bold"
             >
               {title}
             </h1>
-            <span className="absolute bottom-0 right-11">
-              <Curveline />
-            </span>
+            {isCurveline && (
+              <span className="absolute -bottom-2 right-10 lg:right-24">
+                <Curveline />
+              </span>
+            )}
           </div>
         )}
       </section>
