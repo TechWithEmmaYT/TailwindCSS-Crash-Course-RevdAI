@@ -5,6 +5,7 @@ import CompanySection from "@/components/CompanySection";
 import FeatureSection from "@/components/FeatureSection";
 import Testimonials from "@/components/Testimonials";
 import PricingSection from "@/components/PricingSection";
+import CallToActionSection from "@/components/CallToActionSection";
 
 export default function Home() {
   return (
@@ -35,14 +36,11 @@ export default function Home() {
                 />
                 <button
                   className="absolute top-1 right-2 rounded-[28px] w-[107px] h-[37px] p-[1px]
-              bg-gradient-to-r
-              from-brand-primary-purple
-              to-brand-primary-blue  bg-opacity-30"
+              bg-gradient-to-r bg-opacity-30"
                 >
                   <span
-                    className="flex items-center justify-center w-full 
-                h-full rounded-[28px] bg-gradient-to-r from-[1%] to-[95%] from-black
-              to-[#9F54FF] "
+                    className="flex items-center justify-center w-full text-white
+                h-full rounded-[28px] bg-gradient-to-r  from-washed-purple-700 to-primary-purple-700"
                   >
                     Start Free
                   </span>
@@ -70,6 +68,7 @@ export default function Home() {
       <FeatureSection />
       <Testimonials />
       <PricingSection />
+      <CallToActionSection />
     </main>
   );
 }

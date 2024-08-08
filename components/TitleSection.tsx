@@ -23,22 +23,23 @@ const TitleSection: React.FC<TitleSectionProps> = ({
               items-center
               "
       >
-        <div
-          className="
+        {pill && (
+          <div
+            className="
               rounded-full p-[1px] font-normal 
               text-[11.87px]
               bg-gradient-to-r
               from-brand-primary-blue
               to-brand-primary-purple mb-5"
-        >
-          <div
-            className="rounded-full mx-auto px-4 py-2
-           bg-black"
           >
-            {pill}
+            <div
+              className="rounded-full mx-auto px-4 py-2
+           bg-black"
+            >
+              {pill}
+            </div>
           </div>
-        </div>
-
+        )}
         {subheading ? (
           <Fragment>
             <div className="relative">
@@ -64,10 +65,10 @@ const TitleSection: React.FC<TitleSectionProps> = ({
             <p
               className="
                 text-washed-purple-700
-                sm:max-w-[450px]
+                sm:max-w-[500px]
                 text-center
-                text-[13px]
-                sm:text-[16px]
+                text-[16px]
+                sm:text-[18px]
                 "
             >
               {subheading}
@@ -84,7 +85,7 @@ const TitleSection: React.FC<TitleSectionProps> = ({
               {title}
             </h1>
             {isCurveline && (
-              <span className="absolute -bottom-2 right-10 lg:right-24">
+              <span className="absolute -bottom-2 right-16 lg:right-24">
                 <Curveline />
               </span>
             )}

@@ -27,7 +27,7 @@ const FeatureSection = () => {
       justify-center mt-10 sm:pb-[18rem] relative"
       >
         <div
-          className="z-10 flex w-[500px] h-auto justify-center items-center 
+          className="z-10 flex w-[302.56px] lg:w-[500px] h-auto justify-center items-center 
       relative sm:absolute top-0 left-0 sm:ml-0 rounded-2xl border-4 border-washed-purple-300
       border-opacity-10"
         >
@@ -38,7 +38,7 @@ const FeatureSection = () => {
           />
         </div>
         <div
-          className="z-10 top-[1rem] w-[500px] sm:top-[7.3rem] right-0 h-auto flex justify-center items-center 
+          className="z-10 top-[1rem] w-[302.56px] lg:w-[500px] sm:top-[7.3rem] right-0 h-auto flex justify-center items-center 
        relative sm:absolute sm:ml-0 rounded-2xl border-4 border-washed-purple-300
       border-opacity-15"
         >

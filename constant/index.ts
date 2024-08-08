@@ -95,3 +95,73 @@ export const DUMMY_USERS = [
       "Revd.ai is a fantastic tool that has revolutionized our workflow. Our productivity and collaboration have reached new heights.",
   },
 ];
+
+export const FOOTER_MENUS = [
+  {
+    title: "Platform",
+    items: [
+      { id: 10, title: "Features", href: "#" },
+      { id: 20, title: "Pricing", href: "#" },
+      { id: 31, title: "Wiki", href: "#" },
+      { id: 42, title: "Partnership", href: "#" },
+      { id: 57, title: "Affiliate", href: "#" },
+      { id: 61, title: "Download", href: "#" },
+      { id: 79, title: "Community", href: "#" },
+    ],
+  },
+  {
+    title: "Support",
+    items: [
+      { id: 101, title: "Online Chat", href: "#" },
+      { id: 201, title: "Pricing", href: "#" },
+      { id: 312, title: "Wiki", href: "#" },
+      { id: 421, title: "Partnership", href: "#" },
+      { id: 572, title: "Affiliate", href: "#" },
+      { id: 611, title: "Download", href: "#" },
+      { id: 793, title: "Community", href: "#" },
+    ],
+  },
+  {
+    title: "About",
+    items: [
+      { id: 100, title: "Features", href: "#" },
+      { id: 200, title: "Pricing", href: "#" },
+      { id: 310, title: "Wiki", href: "#" },
+      { id: 420, title: "Partnership", href: "#" },
+      { id: 570, title: "Affiliate", href: "#" },
+      { id: 610, title: "Download", href: "#" },
+      { id: 790, title: "Community", href: "#" },
+    ],
+  },
+  {
+    title: "Platform",
+    items: [
+      { id: 106, title: "Features", href: "#" },
+      { id: 206, title: "Pricing", href: "#" },
+      { id: 316, title: "Wiki", href: "#" },
+      { id: 426, title: "Partnership", href: "#" },
+      { id: 576, title: "Affiliate", href: "#" },
+      { id: 616, title: "Download", href: "#" },
+      { id: 796, title: "Community", href: "#" },
+    ],
+  },
+  {
+    title: "Contact",
+    items: [
+      { id: 104, title: "Whatsapp", href: "#" },
+      { id: 204, title: "Telegram", href: "#" },
+      { id: 314, title: "Twitter(X)", href: "#" },
+      { id: 424, title: "Facebook", href: "#" },
+      { id: 574, title: "Instagram", href: "#" },
+      { id: 614, title: "Tiktok", href: "#" },
+      { id: 794, title: "Company Mail", href: "#" },
+    ],
+  },
+  {
+    title: "Legal",
+    items: [
+      { id: 109, title: "Terms of Services", href: "#" },
+      { id: 209, title: "Privacy Policy", href: "#" },
+    ],
+  },
+];

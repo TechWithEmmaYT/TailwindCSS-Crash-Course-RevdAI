@@ -73,17 +73,21 @@ const PricingSection = () => {
       </div>
 
       <div
-        className="w-full max-w-xs flex flex-col-reverse md:flex-row gap-4 justify-center
-       sm:items-stretch mt-10 mx-auto
+        className="w-full max-w-xs flex flex-col-reverse lg:flex-row gap-4 justify-center
+       sm:items-stretch mt-14 mx-auto
       "
       >
         {PRICING_CARDS.map((plan) => (
           <PricingCard
             key={plan.planType}
-            className={clsx("border rounded-2xl background-blur-3xl relative", {
-              "border-brand-primary-purple":
-                plan.planType === PRICING_PLAN.PREMIUM,
-            })}
+            className={clsx(
+              "border rounded-2xl background-blur-3xl relative ",
+              {
+                "border-brand-primary-purple":
+                  plan.planType === PRICING_PLAN.PREMIUM,
+                "border-[#282829]": plan.planType !== PRICING_PLAN.PREMIUM,
+              }
+            )}
             cardHeader={
               <div className="w-full">
                 {plan.planType === PRICING_PLAN.PREMIUM && (
@@ -120,10 +124,21 @@ const PricingSection = () => {
                   </h5>
                 </div>
                 <p className="text-washed-purple-800">{plan.description}</p>
-                <button className="whitespace-nowrap w-full mt-4">
-                  {plan.planType === PRICING_PLAN.ENTERPRISE
-                    ? "Contact Us"
-                    : "Get Started"}
+                <button
+                  className="whitespace-nowrap w-full h-[42px] mt-4 p-[1px]
+                bg-gradient-to-r from-[#201F30] to-[#666666]/30 rounded-[15px]
+                "
+                >
+                  <span
+                    className="flex items-center gap-3 justify-center w-full 
+                  h-full rounded-[15px]
+                  bg-gradient-to-tr from-black to-[#46445b]/5
+                  text-[17px] font-normal text-[#8D8C95]"
+                  >
+                    {plan.planType === PRICING_PLAN.ENTERPRISE
+                      ? "Contact Us"
+                      : "Get Started"}
+                  </span>
                 </button>
               </div>
             }

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans } from "next/font/google";
+import NavigationBar from "@/components/NavigationBar";
+import FooterSection from "@/components/FooterSection";
 import "./globals.css";
 
 const dnSans = DM_Sans({ subsets: ["latin"] });
@@ -16,7 +18,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${dnSans.className} bg-brand-dark`}>{children}</body>
+      <body className={`${dnSans.className} bg-brand-dark pb-28`}>
+        <NavigationBar />
+        <div className="w-full">{children}</div>
+        <FooterSection />
+      </body>
     </html>
   );
 }
