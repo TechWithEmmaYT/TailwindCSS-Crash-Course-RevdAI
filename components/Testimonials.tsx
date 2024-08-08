@@ -5,7 +5,7 @@ import { randomUUID } from "crypto";
 import { twMerge } from "tailwind-merge";
 import TitleSection from "./TitleSection";
 import { DUMMY_USERS } from "@/constant";
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "./ui/TestimonialCard";
 
 const Testimonials = () => {
   return (

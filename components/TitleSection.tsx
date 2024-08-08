@@ -65,7 +65,7 @@ const TitleSection: React.FC<TitleSectionProps> = ({
               className="
                 text-washed-purple-700
                 sm:max-w-[450px]
-                md:text-center
+                text-center
                 text-[13px]
                 sm:text-[16px]
                 "
